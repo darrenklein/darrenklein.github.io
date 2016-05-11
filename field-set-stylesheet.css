@@ -1,0 +1,49 @@
+body{
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+#header{
+    width: 100%;
+    margin-bottom: 60px;
+    margin-left: 36px;
+    max-width: initial;
+}
+
+#top_row{
+    border-bottom: solid 4px;
+    border-bottom-color: red;
+}
+
+#site_name{
+    display: inline-block;
+    margin-left: 4px;
+    font-size: 65px;
+    letter-spacing: 6px;
+    padding: 0px;
+}
+
+#tagline{
+    margin-left: 35px;
+    font-size: 14px;
+    letter-spacing: 2.5px;
+}
+
+#navigation{
+    display: inline-block;
+    padding: 0px;
+}
+
+
+#contents{
+    width: 70%;
+    max-width: initial;
+}
+
+#intro{
+    
+}
+
+#PSFIST_iframe{
+    height: 500px;
+    width: 100%;
+}

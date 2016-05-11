@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>field-set</title>
+    <link rel="shortcut icon" href="images/field-set-icon.png">
+    
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+
+    <link rel="stylesheet" type="text/css" href="field-set-stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="foundation.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+    
+    <!--FOUNDATION-->
+    <script src="scripts/modernizr.js"></script>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/fastclick.js"></script>
+    <script src="scripts/foundation.min.js"></script>
+    
+    <!--GOOGLE FONT-->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
+    
+</head>
+
+<body>
+    
+    <div id="header" class="row">
+        
+        <div id="top_row" class="medium-12 columns">
+            
+            <div id="site_name" class="medium-6 columns">field-set</div>
+            
+            <div id="navigation" class="medium-5 columns">
+                
+                <a class="button" data-dropdown="productsDropdown" aria-controls="autoCloseExample" aria-expanded="false">Products &raquo;</a>
+                <ul id="productsDropdown" class="f-dropdown" data-dropdown-content tabindex="-1" aria-hidden="true" aria-autoclose="false" tabindex="-1">
+                <li><a href="#">Dynamic Forms</a></li>
+                <li><a href="#">Geospatial Data</a></li>
+                </ul>
+        
+                <a class="button" data-dropdown="aboutDropdown" aria-controls="autoCloseExample" aria-expanded="false">About &raquo;</a>
+                <ul id="aboutDropdown" class="f-dropdown" data-dropdown-content tabindex="-1" aria-hidden="true" aria-autoclose="false" tabindex="-1">
+                <li><a href="#">about field-set</a></li>
+                <li><a href="#">people</a></li>
+                </ul>
+
+                <a class="button">Contact</a>
+        
+            </div>
+            
+        </div>
+        
+        <div id="tagline">web-based data collection tools</div>
+        
+    </div>
+    
+    
+    
+    <div id="contents" class="row">
+    
+        <div id="intro" class="medium-12 columns">
+    
+            Don't know how many unique records will need to be logged every time you enter data?  Perhaps a dynamic form is the thing for you.</p>
+            
+            The Project Safe Flight Integrated Survey Tool (shown below) was created for NYC Audubon for just this reason.</br>
+            Field researchers used to have to file reports one at a time - now they can log anywhere from 1 to 162 reports all at once, making data collection much easier and less error-prone (and maybe even fun?).</p>
+    
+    Take it for a spin - don't worry, it's just a demo version, you won't mess up their research.
+
+    <iframe id="PSFIST_iframe" src="http://field-set.com/demo/PSFIST.html"></iframe>
+            
+            </div>
+    </div>
+
+<script>
+    $(document).foundation();
+</script>
+
+</body>
+
+</html>

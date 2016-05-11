@@ -31,13 +31,9 @@
             <div id="site_name" class="medium-6 columns">darren klein</div>
             
             <div id="navigation" class="medium-5 columns">
-                
                 <a class="button">About &raquo;</a>
-                
                 <a class="button">Projects &raquo;</a>
-
                 <a class="button">Contact &raquo;</a>
-        
             </div>
             
         </div>
@@ -49,7 +45,7 @@
     
     <div id="contents" class="row">
     
-        <div id="about" class="content_container">
+        <div id="about" class="content_container row">
             I am a web developer with a particular passion for creating tools for environmental and social causes. I work with:
             <ul>
                 <li>Javascript/jQuery</li>
@@ -62,17 +58,51 @@
             </ul>
         </div>
 
-        <div id="projects" class="content_container">
-            D-Bird, PSFIST, Carto Doodle, GeoStudy
+        <div id="projects" class="content_container row">
+            <div class="medium-4 columns" data-reveal-id="D-Bird_Modal">D-Bird</div>
+            
+            <div id="D-Bird_Modal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                <h2 id="modalTitle">D-Bird</h2>
+                <p class="lead">Crowdsourced data collection</p>
+                <iframe src="http://d-bird.org/visualization.html" class="medium-12 columns"></iframe>
+                <p>Every year, millions of birds are killed by colliding with buildings. D-Bird was created for <a href="http://www.nycaudubon.org" target="_blank">New York City Audubon</a> to aid in their research and advocacy work by collecting crowdsourced georeferenced bird mortality data.</p>
+                <p>D-Bird is a fully-responsive mobile and desktop web app, and can be viewed at <a href="http://d-bird.org/" target="_blank">www.d-bird.org</a></p>
+                <p>D-Bird has recently launched in Texas, Minnesota, and Atlanta</p>
+                <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+            </div>
+            
+            <div class="medium-4 columns" data-reveal-id="PSFiST_Modal">PSFiST</div>
+            
+            <div id="PSFiST_Modal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                <h2 id="modalTitle">Project Safe Flight Survey Tool (PSFiST)</h2>
+                <p class="lead">Dynamic field data form</p>
+                <!--<iframe src="http://d-bird.org/visualization.html" class="medium-12 columns"></iframe>-->
+                <p>Created for <a href="http://www.nycaudubon.org" target="_blank">New York City Audubon's</a> scientific bird mortality study, <a href="http://www.nycaudubon.org/project-safe-flight" target="_blank">Project Safe Flight</a>, PSFiST allows project volunteers to record a variable number of records per form submission.</p>
+                <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+            </div>
+            
+            <div class="medium-4 columns" data-reveal-id="GeoStudy_Modal">GeoStudy</div>
+            
+            <div id="GeoStudy_Modal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                <h2 id="modalTitle">GeoStudy</h2>
+                <p class="lead">Field data collection suite</p>
+                <p></p>
+                <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+            </div>
+            
         </div>
 
-        <div id="contact" class="content_container">
+        <div id="contact" class="content_container row">
             I am available for contract web development - please reach out to me at <a href="mailto:darren.a.klein@gmail.com">darren.a.klein@gmail.com</a></br>
             github: <a href="https://github.com/darrenklein">darrenklein</a>
         </div>
 
     </div>
     
+    
+    <script type="text/javascript"> 
+        $(document).foundation();
+    </script>
 
 </body>
 

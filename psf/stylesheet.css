@@ -1,0 +1,280 @@
+body{
+    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    display: block;
+    margin: 8px 8px 8px 8px;
+}
+
+a{
+    color: #0EB2ED;
+}
+
+a:hover, a:focus{
+    color: #0E89ED;
+}
+
+#banner{
+    width: 475px;
+    margin-bottom: 5px;
+}
+
+.header{
+    margin-bottom: 45px;
+}
+
+.header_text{
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 0px 0px 0px 44px;
+}
+
+#contents{
+    display: block;
+    background-color: #FCFCFC;
+    width: 687px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: solid #DDFCFC;
+    border-radius: 4px;
+}
+
+#instructions{
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+#instruction_list{
+    font-size: 14px;
+}
+
+#psf_form{
+    display: table;
+    position: relative;
+    width: 68%;
+    margin: 0 auto;
+    padding: 20px 45px 60px 45px;
+    background-color: #F5F2F2;
+    border: solid #BAD4D4;
+    border-radius: 4px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 14px;
+}
+
+#survey_info{
+    display: block;
+}
+
+#site_info{
+    display: none;
+}
+
+#summary{
+    display: none;
+}
+
+.form_field{
+    margin: 3px 0px 0px 8px;
+}
+
+.survey_entry_field{
+    margin: 0px 0px 20px 0px;
+}
+
+.site_entry_field{
+    width: 328px;
+    margin: 5px 0px 11px 0px;
+}
+
+button, input[type="submit"]{
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 23px;
+    letter-spacing: 1px;
+    padding: 4px 15px 4px 15px;
+    border: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.next{
+    bottom: 20px;
+    right: 30px;
+    background: #3AAAF5;
+}
+
+.next:hover{
+    background: #3498DB;
+}
+
+.previous{
+    bottom: 20px;
+    left: 30px;
+    background: #F5753F;
+}
+
+.previous:hover{
+    background: #DB6938;
+}
+
+#submit{
+    bottom: 20px;
+    right: 30px;
+    background: #62DF69;
+}
+
+#submit:hover{
+    background: #59CC6D;
+}
+
+#submitting{
+    height: 24px;
+    color: #FFFFFF;
+    font-size: 23px;
+    position: absolute;
+    bottom: 18px;
+    right: 30px;
+    background: #59CC6D;
+    padding: 4px 15px 7px 15px;
+    border-radius: 4px;
+    border: 0px;
+}
+
+.animated { 
+    -webkit-animation-duration: 2.5s; 
+    animation-duration: 2.5s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease-in-out; 
+    animation-timing-function: ease-in-out; 
+    animation-iteration-count:infinite; 
+    -webkit-animation-iteration-count:infinite; 
+} 
+
+@-webkit-keyframes flash { 
+    0%, 50%, 100% {opacity: 1;} 
+    25%, 75% {opacity: 0;} 
+} 
+
+@keyframes flash { 
+    0%, 50%, 100% {opacity: 1;} 
+    25%, 75% {opacity: 0;} 
+} 
+
+.flash { 
+    -webkit-animation-name: flash; 
+    animation-name: flash; 
+}
+
+.clear{
+    display: inline-block;
+    color: #E02B03;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.fields{
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.survey_fields{
+    width: 296px;
+
+}
+
+.site_fields{
+    width: 422px;
+}
+
+
+.page_number{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.page_instructions{
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+#name, #date, #duration, #weather{
+    width: 282px;
+}
+
+.time{
+    width: 88px;
+}
+
+#route_display_name{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.individual_site_container{
+    margin-bottom: 25px;
+    padding: 6px 20px 8px 20px;
+}
+
+.site_text_input{
+    width: 221px;
+}
+
+.bird_container{
+    border: 2px solid #FF9F02;
+    padding: 15px 20px 15px 20px;
+    margin: 10px 0px 24px 0px;
+}
+
+.site_radio{
+    margin-right: 15px;
+}
+
+.none_container{
+    margin: 0 auto;
+    width: 321px;
+}
+
+#summary_container{
+    margin: 25px 0px 25px 0px;
+}
+
+.summary_field{
+    display: inline-block;
+}
+
+.summary_header{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#survey_summary{
+    margin: 4px 0px 15px 8px;
+}
+
+.individual_summary{
+    margin: 4px 0px 15px 8px;
+}
+
+.individual_summary_fields{
+    margin-left: 4px;
+}
+
+#thanks_content{
+    font-size: 20px;
+    width: 460px;
+    margin: 0 auto;
+    margin-top: 75px;
+}
+
+.thanks_block{
+    margin-bottom: 15px;
+}

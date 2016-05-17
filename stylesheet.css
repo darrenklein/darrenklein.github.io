@@ -59,18 +59,25 @@ iframe{
 }
 
 .project_container{
-    max-height: 372px !important;
+    display: block !important;
+    height: 325px !important;
+    margin: 0px 0px 20px 0px !important;
 }
 
 .project{
     cursor: pointer;
     box-shadow: 0px 0px 10px #888888;
-    margin: 20px 0px 20px 0px !important;
     height: 100%;
+}
+
+.project:hover{
+    background-color: #EBEBEB;
 }
 
 .project_image{
     border: solid 2px #888888;
+    display: block;
+    height: 239px;
 }
 
 .project_tag{
@@ -78,7 +85,11 @@ iframe{
 }
 
 .reveal-modal{
-    top: 0px !important;
+    /*position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;*/
 }
 
 #github_logo{

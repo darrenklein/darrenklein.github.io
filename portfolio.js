@@ -1,7 +1,7 @@
 function scroll(target){
     $('html, body').animate({
         scrollTop: $(target).offset().top-170
-    }, 2000);
+    }, 1000);
 };
 
 $("#about_button").click(function() {

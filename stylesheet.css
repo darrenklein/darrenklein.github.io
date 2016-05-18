@@ -1,5 +1,8 @@
 body{
     font-family: 'Open Sans', sans-serif !important;
+    margin: 0 !important;
+    position: absolute !important;
+    height: auto !important;
 }
 
 iframe{
@@ -48,14 +51,23 @@ iframe{
 }
 
 #contents{
-    margin-top: 182px;
+    margin-top: 160px;
     width: 70%;
     max-width: initial;
     z-index: 0;
 }
 
-.content_container{
-    margin: 50px 0px 50px 0px !important;
+#about{
+    margin-bottom: 90px;
+}
+
+#projects{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+#contact{
+    margin-top: 90px;
 }
 
 .project_container{
@@ -85,11 +97,8 @@ iframe{
 }
 
 .reveal-modal{
-    /*position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;*/
+    top: 0 !important;
+    position: fixed !important;
 }
 
 #github_logo{

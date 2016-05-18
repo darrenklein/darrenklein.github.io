@@ -1,6 +1,6 @@
 function scroll(target){
     $('html, body').animate({
-        scrollTop: $(target).offset().top-170
+        scrollTop: $(target).offset().top-160
     }, 1000);
 };
 

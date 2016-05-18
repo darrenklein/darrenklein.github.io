@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Long Island Volunteer Alewife Survey</title>
+    <link rel="shortcut icon" href="http://www.field-set.com/images/field-set-icon.png">
+    
+    <!--THIS META TAG IS NECESSARY FOR FOUNDATION TO WORK-->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0' >
+    
+    <link rel="stylesheet" href="stylesheet.css" />
+        
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    
+    <link rel="stylesheet" href="foundation-5.5.2/css/normalize.css" />
+    <link rel="stylesheet" href="foundation-5.5.2/css/foundation.css" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    
+</head>
+
+<body>
+    
+    <div id="top_bar"></div>
+    
+    <div class="header">    
+        <div class="contain-to-grid nav-container">
+            <div id="title">Long Island Volunteer Alewife Survey</div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div id="welcome_content" class="row">
+            <div id="seatuck_logo"><img src="images/seatuck_logo.jpg" /></div>
+            <div id="welcome_text">Welcome!</br>Are you filing an on-site report or an off-site report?</div>
+        </div>
+
+        <div class="row">
+            <div class="panel" id="landing_panel">
+                <form action="report.php" id="welcome_form" method="GET">
+                    <select id="report_select" name="report_select">
+                        <option value="null" disabled selected>Choose one</option>
+                        <option value="on-site">On-site</option>
+                        <option value="off-site">Off-site</option>
+                    </select></br>
+
+                    <input type="submit" value="Continue" id="continue" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="credit">Created by Darren Klein - <a href="http://www.field-set.com/" target="_blank">www.field-set.com</a></div>
+    </div>
+
+<!--AUTOMATICALLY REDIRECTS TO OFF-SITE PAGE IF USER IS ON A COMPUTER-->
+<script>
+if (window.screen.width > 640) {
+	window.location.replace("report.html?report_select=off-site")
+};
+</script>
+
+<script>
+    //WELCOME PAGE FUNCTIONS
+    $("#continue").attr("disabled", true);
+    
+    $("#report_select").change(function(){
+       $("#continue").attr("disabled", false);
+    });
+</script>
+
+</body>
+
+</html>

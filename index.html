@@ -47,7 +47,7 @@
     
         <div id="about" class="content_container row">
             <h2>About Me</h2>
-            I am a freelance web developer with a particular passion for creating tools that benefit environmental and social causes. I have worked to develop research and data collection tools for NYC Audubon, Seatuck, Cornell Cooperative Extension, The New School, and the Delaware Riverkeeper Network.
+            I am a freelance web developer based in Brooklyn, NY, with a particular passion for creating tools that benefit environmental and social causes. I have worked to develop research and data collection tools for NYC Audubon, Seatuck, Cornell Cooperative Extension, The New School, and the Delaware Riverkeeper Network.
         </div>
 
         <div id="projects" class="content_container row">
@@ -55,7 +55,7 @@
             
             <div class="project_row row">
             
-                <div class="medium-4 columns project_container" data-reveal-id="D-Bird_Modal">
+                <div class="medium-4 columns project_container" data-open="d-bird_modal">
                     <div class="medium-24 columns project">
                         <h4 class="project_title">D-Bird</h4>
                         <img src="images/d-bird.png" class="project_image" />
@@ -63,7 +63,7 @@
                     </div>
                 </div>
 
-                <div class="medium-4 columns project_container" data-reveal-id="PSFiST_Modal">
+                <div class="medium-4 columns project_container" data-open="psfist_modal">
                     <div class="medium-24 columns project">
                         <h4 class="project_title">PSFiST</h4>
                         <img src="images/psfist.png" class="project_image" />
@@ -71,7 +71,7 @@
                     </div>
                 </div>
 
-                <div class="medium-4 columns project_container" data-reveal-id="GeoStudy_Modal">
+                <div class="medium-4 columns project_container" data-open="geostudy_modal">
                     <div class="medium-24 columns project">
                         <h4 class="project_title">GeoStudy</h4>
                         <img src="images/geostudy.png" class="project_image" />
@@ -83,7 +83,7 @@
             
             <div class="project_row row">
             
-                <div class="medium-4 columns project_container" data-reveal-id="LIVAS_Modal">
+                <div class="medium-4 columns project_container" data-open="livas_modal">
                     <div class="medium-24 columns project">
                         <h4 class="project_title">LIVAS</h4>
                         <img src="images/livas.png" class="project_image" />
@@ -105,48 +105,59 @@
     
     
     <!--REVEAL MODALS-->
-    <div id="D-Bird_Modal" class="reveal-modal full" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <div id="d-bird_modal" class="reveal large" data-reveal>
         <h2 id="modalTitle">D-Bird</h2>
         <p class="lead">Crowdsourced data collection</p>
         <p class="client">Client: <a href="http://www.nycaudubon.org" target="_blank">New York City Audubon Society</a></p>
-        <iframe src="d-bird/D-Bird.html" class="medium-7 columns"></iframe>
-        <div class="medium-5 columns project_description">
-            <p>Every year, millions of birds are killed by colliding with buildings. D-Bird is a fully-responsive mobile and desktop web app created for NYC Audubon to aid in their research and advocacy work by collecting crowdsourced georeferenced bird mortality data.</p>
+        <iframe src="d-bird/D-Bird.html" class="medium-8 columns"></iframe>
+        <div class="medium-4 columns project_description">
+            <p>Every year, millions of birds are killed by colliding with buildings - this is a major conservation issue that NYC Audubon is working to address. D-Bird is a fully-responsive mobile and desktop web app created for NYC Audubon to complement their research and advocacy efforts by collecting crowdsourced georeferenced bird mortality data.</p>
             <p>D-Bird has recently launched in Texas, Minnesota, and Atlanta.</p>
+            <p>In addition to the data collection tool, each client has access to an administrator portal that includes data visualization, summary, and export functions.</p>
         </div>
-        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
     </div>
     
-    <div id="PSFiST_Modal" class="reveal-modal full" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <div id="psfist_modal" class="reveal large" data-reveal>
         <h2 id="modalTitle">Project Safe Flight Survey Tool (PSFiST)</h2>
         <p class="lead">Dynamic field data form</p>
         <p class="client">Client: <a href="http://www.nycaudubon.org" target="_blank">New York City Audubon Society</a></p>
-        <iframe src="psf/index.html" class="medium-7 columns"></iframe>
-        <div class="medium-5 columns project_description">
+        <iframe src="psf/index.html" class="medium-8 columns"></iframe>
+        <div class="medium-4 columns project_description">
             <p>Created for NYC Audubon's scientific bird mortality study, <a href="http://www.nycaudubon.org/project-safe-flight" target="_blank">Project Safe Flight</a>, PSFiST allows project volunteers to record a variable number of records per form submission.</p>
         </div>
-        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
     </div>
     
-    <div id="GeoStudy_Modal" class="reveal-modal full" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <div id="geostudy_modal" class="reveal large" data-reveal>
         <h2 id="modalTitle">GeoStudy</h2>
         <p class="lead">Field data collection suite</p>
-        <img src="images/geostudy.png" class="medium-7 columns" />
-        <div class="medium-5 columns project_description">
-            <p>A field data collection suite.</p>
+        <img src="images/geostudy.png" class="medium-8 columns" />
+        <div class="medium-4 columns project_description">
+            <p>GeoStudy is a prototype field research data collection suite, modelled on a fictional food distribution and purchasing study.</p>
+            <p>Built in Ruby on Rails, GeoStudy allows researchers to create georeferenced study sites and collect various types of related field data.</p>
+            <p>A dedicated administrator portal allows project leaders to dynamically define study parameters, review survey progress, and export summary field data reports.</p>
         </div>
-        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
     </div>
     
-    <div id="LIVAS_Modal" class="reveal-modal full" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <div id="livas_modal" class="reveal large" data-reveal>
         <h2 id="modalTitle">Long Island Volunteer Alewife Survey (LIVAS)</h2>
         <p class="lead">Field data collection</p>
         <p class="client">Client: <a href="https://www.seatuck.org/" target="_blank">Seatuck Environmental Association</a></p>
-        <iframe src="livas/welcome.html" class="medium-7 columns"></iframe>
-        <div class="medium-5 columns project_description">
+        <iframe src="livas/welcome.html" class="medium-8 columns"></iframe>
+        <div class="medium-4 columns project_description">
             <p>Created for Seatuck, LIVAS is a fully-responsive mobile and desktop web-app designed to collect volunteer-sourced georeferenced river herring population survey data.</p>
         </div>
-        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
     </div>
     
     <div id="footer"></div>

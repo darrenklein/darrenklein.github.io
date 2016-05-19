@@ -48,6 +48,9 @@ iframe{
     padding: 0 !important;
     font-size: 20px !important;
     margin-top: 0px !important;
+    margin-right: 20px !important;
+    color: black !important;
+    background-color: #FFFFFF !important;
 }
 
 #contents{
@@ -95,11 +98,6 @@ iframe{
 
 .project_tag{
     font-style: italic;
-}
-
-.reveal-modal{
-    top: 0 !important;
-    position: fixed !important;
 }
 
 #github_logo{

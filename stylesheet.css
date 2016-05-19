@@ -3,6 +3,7 @@ body{
     margin: 0 !important;
     position: absolute !important;
     height: auto !important;
+    background-color: #FFFFFF !important;
 }
 
 iframe{
@@ -71,6 +72,12 @@ iframe{
     margin-bottom: 90px;
 }
 
+.body_text{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
 #projects{
     margin-top: 90px;
     margin-bottom: 90px;
@@ -86,6 +93,7 @@ iframe{
     cursor: pointer;
     box-shadow: 0px 0px 10px #888888;
     height: 100%;
+    padding-top: 7px !important;
 }
 
 .project:hover{
@@ -102,13 +110,18 @@ iframe{
     font-style: italic;
 }
 
+.demo{
+    margin: 0;
+    font-style: italic;
+}
+
 #contact{
     margin-top: 90px;
     margin-bottom: 60px;
 }
 
 #github_logo{
-    width: 90px;
+    width: 114px;
 }
 
 #github_link{

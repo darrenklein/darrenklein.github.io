@@ -120,6 +120,11 @@ iframe{
     margin-bottom: 60px;
 }
 
+#github{
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
 #github_logo{
     width: 114px;
 }

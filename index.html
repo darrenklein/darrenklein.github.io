@@ -91,6 +91,18 @@
                     </div>
                 </div>
                 
+                <div class="medium-4 columns project_container" data-open="carto_doodle_modal">
+                    <div class="medium-24 columns project">
+                        <h4 class="project_title">Carto Doodle</h4>
+                        <img src="images/carto_doodle.png" class="project_image" />
+                        <p class="project_tag">Concept and website development</p>
+                    </div>
+                </div>
+                
+                <!--DELETE THIS PLACEHOLDER WHEN YOU GET THREE PROJECTS IN THE ROW-->
+                <div class="medium-4 columns project_container" id="placeholder">
+                </div>
+                
             </div>
             
         </div>
@@ -160,6 +172,20 @@
         <div class="medium-4 columns project_description">
             <p>Created for Seatuck, LIVAS is a fully-responsive mobile and desktop web-app designed to collect volunteer-sourced georeferenced river herring population survey data.</p>
             <p>In addition to the data collection tool, the client has access to an administrator portal that includes data summary and export functions.</p>
+        </div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div id="carto_doodle_modal" class="reveal large" data-reveal>
+        <h2 id="modalTitle">Carto Doodle</h2>
+        <p class="lead">Map geometry input and editor</p>
+        <p class="demo">Active demo</p>
+        <iframe src="http://field-set.com/carto_doodle/" class="medium-8 columns"></iframe>
+        <div class="medium-4 columns project_description">
+            <p>Carto Doodle allows users to draw, edit, and delete their own custom map geometries - try it out and add a few! After submitting, click the link to go to the <a href="http://field-set.com/carto_doodle/admin.html" target="_blank">admin tool</a> to see your work.</p>
+            <p>Carto Doodle is built on a <a href="https://cartodb.com/">CartoDB</a> back-end.</p>
         </div>
         <button class="close-button" data-close aria-label="Close modal" type="button">
             <span aria-hidden="true">&times;</span>

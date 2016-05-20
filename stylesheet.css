@@ -104,6 +104,7 @@ iframe{
     border: solid 2px #888888;
     display: block;
     height: 239px;
+    width: 100%;
 }
 
 .project_tag{

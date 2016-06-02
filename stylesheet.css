@@ -149,11 +149,16 @@ iframe{
     background-color: black;
 }
 
+.close-row{
+    margin-top: 15px;
+}
+
 .extra-close-button{
     display: block;
     color: #FFFFFF;
-    background-color: rgba(5,109,182,1.0);;
+    background-color: #0688E3;
     margin: auto;
     width: 85px;
-    height: 40px;
+    height: 34px;
+    border-radius: 2px !important;
 }

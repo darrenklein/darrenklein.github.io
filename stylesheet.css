@@ -162,3 +162,7 @@ iframe{
     height: 34px;
     border-radius: 2px !important;
 }
+
+.extra-close-button:hover{
+    background-color: #0574C2;
+}

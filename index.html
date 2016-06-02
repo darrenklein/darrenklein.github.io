@@ -26,11 +26,12 @@
 
     <div id="header" class="row">
         
-        <div id="top_row" class="medium-12 columns">
+        <div id="top_row" class="small-12 columns">
             
-            <div id="site_name" class="medium-6 columns">darren klein</div>
+            <div id="site_name" class="show-for-medium medium-6 columns">darren klein</div>
+            <div id="site_name_small" class="show-for-small-only small-12 columns">darren klein</div>
             
-            <div id="navigation" class="medium-5 columns">
+            <div id="navigation" class="show-for-medium medium-5 columns">
                 <a class="button" id="about_button">About &raquo;</a>
                 <a class="button" id="projects_button">Projects &raquo;</a>
                 <a class="button" id="contact_button">Contact &raquo;</a>
@@ -120,78 +121,113 @@
 
     <!--REVEAL MODALS-->
     <div id="d-bird_modal" class="reveal large" data-reveal>
-        <h2 id="modalTitle">D-Bird</h2>
-        <p class="lead">Crowdsourced data collection</p>
-        <p class="client">Client: <a href="http://www.nycaudubon.org" target="_blank">New York City Audubon Society</a></p>
-        <p class="demo">Active demo</p>
-        <iframe src="d-bird/D-Bird.html" class="medium-8 columns"></iframe>
-        <div class="medium-4 columns project_description">
-            <p>Every year, millions of birds are killed by colliding with buildings - this is a major conservation issue that NYC Audubon is working to address. D-Bird is a fully-responsive mobile and desktop web app created for NYC Audubon to complement their research and advocacy efforts by collecting crowdsourced georeferenced bird mortality data.</p>
-            <p>In addition to the data collection tool, each client has access to an administrator portal that includes data visualization, summary, and export functions.</p>
-            <p>D-Bird has recently launched in Texas, Minnesota, and Atlanta.</p>
+        <div class="row">
+            <h2 id="modalTitle">D-Bird</h2>
+            <p class="lead">Crowdsourced data collection</p>
+            <p class="client">Client: <a href="http://www.nycaudubon.org" target="_blank">New York City Audubon Society</a></p>
+            <p class="demo">Active demo</p>
+            <iframe src="d-bird/D-Bird.html" class="medium-8 columns"></iframe>
+            <div class="medium-4 columns project_description">
+                <p>Every year, millions of birds are killed by colliding with buildings - this is a major conservation issue that NYC Audubon is working to address. D-Bird is a fully-responsive mobile and desktop web app created for NYC Audubon to complement their research and advocacy efforts by collecting crowdsourced georeferenced bird mortality data.</p>
+                <p>In addition to the data collection tool, each client has access to an administrator portal that includes data visualization, summary, and export functions.</p>
+                <p>D-Bird has recently launched in Texas, Minnesota, and Atlanta.</p>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
         </div>
-        <button class="close-button" data-close aria-label="Close modal" type="button">
-            <span aria-hidden="true">&times;</span>
-        </button>
+        <div class="row">
+            <button class="extra-close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times; Close</span>
+            </button>
+        </div>
     </div>
     
     <div id="psfist_modal" class="reveal large" data-reveal>
-        <h2 id="modalTitle">Project Safe Flight Survey Tool (PSFST)</h2>
-        <p class="lead">Dynamic field data form</p>
-        <p class="client">Client: <a href="http://www.nycaudubon.org" target="_blank">New York City Audubon Society</a></p>
-        <p class="demo">Active demo</p>
-        <iframe src="psf/index.html" class="medium-8 columns"></iframe>
-        <div class="medium-4 columns project_description">
-            <p>Created for NYC Audubon's scientific bird mortality study, <a href="http://www.nycaudubon.org/project-safe-flight" target="_blank">Project Safe Flight</a>, PSFST allows project volunteers to record up to 360 entries per form submission.</p>
-            <p>PSFST is built on a PHP/MySQL back-end.</p>
+        <div class="row">
+            <h2 id="modalTitle">Project Safe Flight Survey Tool (PSFST)</h2>
+            <p class="lead">Dynamic field data form</p>
+            <p class="client">Client: <a href="http://www.nycaudubon.org" target="_blank">New York City Audubon Society</a></p>
+            <p class="demo">Active demo</p>
+            <iframe src="psf/index.html" class="medium-8 columns"></iframe>
+            <div class="medium-4 columns project_description">
+                <p>Created for NYC Audubon's scientific bird mortality study, <a href="http://www.nycaudubon.org/project-safe-flight" target="_blank">Project Safe Flight</a>, PSFST allows project volunteers to record up to 360 entries per form submission.</p>
+                <p>PSFST is built on a PHP/MySQL back-end.</p>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
         </div>
-        <button class="close-button" data-close aria-label="Close modal" type="button">
-            <span aria-hidden="true">&times;</span>
-        </button>
+        <div class="row">
+            <button class="extra-close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times; Close</span>
+            </button>
+        </div>
     </div>
     
     <div id="geostudy_modal" class="reveal large" data-reveal>
-        <h2 id="modalTitle">GeoStudy</h2>
-        <p class="lead">Field data collection suite</p>
-        <iframe src="geostudy/geostudy.html" class="medium-8 columns"></iframe>
-        <div class="medium-4 columns project_description">
-            <p>GeoStudy is a prototype field research data collection suite, modelled on a fictional food distribution and purchasing study.</p>
-            <p>Built in Ruby on Rails, GeoStudy allows researchers to create georeferenced study sites and collect various types of related field data.</p>
-            <p>A dedicated administrator portal allows project leaders to dynamically define study parameters, review survey progress, and export summary field data reports.</p>
+        <div class="row">
+            <h2 id="modalTitle">GeoStudy</h2>
+            <p class="lead">Field data collection suite</p>
+            <iframe src="geostudy/geostudy.html" class="medium-8 columns"></iframe>
+            <div class="medium-4 columns project_description">
+                <p>GeoStudy is a prototype field research data collection suite, modelled on a fictional food distribution and purchasing study.</p>
+                <p>Built in Ruby on Rails, GeoStudy allows researchers to create georeferenced study sites and collect various types of related field data.</p>
+                <p>A dedicated administrator portal allows project leaders to dynamically define study parameters, review survey progress, and export summary field data reports.</p>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
         </div>
-        <button class="close-button" data-close aria-label="Close modal" type="button">
-            <span aria-hidden="true">&times;</span>
-        </button>
+        <div class="row">
+            <button class="extra-close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times; Close</span>
+            </button>
+        </div>
     </div>
     
     <div id="livas_modal" class="reveal large" data-reveal>
-        <h2 id="modalTitle">Long Island Volunteer Alewife Survey (LIVAS)</h2>
-        <p class="lead">Field data collection</p>
-        <p class="client">Client: <a href="https://www.seatuck.org/" target="_blank">Seatuck Environmental Association</a></p>
-        <p class="demo">Active demo</p>
-        <iframe src="livas/welcome.html" class="medium-8 columns"></iframe>
-        <div class="medium-4 columns project_description">
-            <p>Created for Seatuck, LIVAS is a fully-responsive mobile and desktop web-app designed to collect volunteer-sourced georeferenced river herring population survey data.</p>
-            <p>In addition to the data collection tool, the client has access to an administrator portal that includes data summary and export functions.</p>
-            <p>LIVAS is built on a PHP/MySQL back-end with a Zurb Foundation responsive front-end.</p>
+        <div class="row">
+            <h2 id="modalTitle">Long Island Volunteer Alewife Survey (LIVAS)</h2>
+            <p class="lead">Field data collection</p>
+            <p class="client">Client: <a href="https://www.seatuck.org/" target="_blank">Seatuck Environmental Association</a></p>
+            <p class="demo">Active demo</p>
+            <iframe src="livas/welcome.html" class="medium-8 columns"></iframe>
+            <div class="medium-4 columns project_description">
+                <p>Created for Seatuck, LIVAS is a fully-responsive mobile and desktop web-app designed to collect volunteer-sourced georeferenced river herring population survey data.</p>
+                <p>In addition to the data collection tool, the client has access to an administrator portal that includes data summary and export functions.</p>
+                <p>LIVAS is built on a PHP/MySQL back-end with a Zurb Foundation responsive front-end.</p>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
         </div>
-        <button class="close-button" data-close aria-label="Close modal" type="button">
-            <span aria-hidden="true">&times;</span>
-        </button>
+        <div class="row">
+            <button class="extra-close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times; Close</span>
+            </button>
+        </div>
     </div>
 
     <div id="carto_doodle_modal" class="reveal large" data-reveal>
-        <h2 id="modalTitle">Carto Doodle</h2>
-        <p class="lead">Map geometry input and editor</p>
-        <p class="demo">Active demo</p>
-        <iframe src="http://field-set.com/carto_doodle/" class="medium-8 columns"></iframe>
-        <div class="medium-4 columns project_description">
-            <p>Carto Doodle allows users to draw, edit, and delete their own custom map geometries - try it out and add a few! After submitting, click the link to go to the <a href="http://field-set.com/carto_doodle/admin.html" target="_blank">admin tool</a> to see your work.</p>
-            <p>Carto Doodle is built on a <a href="https://cartodb.com/">CartoDB</a> back-end.</p>
+        <div class="row">
+            <h2 id="modalTitle">Carto Doodle</h2>
+            <p class="lead">Map geometry input and editor</p>
+            <p class="demo">Active demo</p>
+            <iframe src="http://field-set.com/carto_doodle/" class="medium-8 columns"></iframe>
+            <div class="medium-4 columns project_description">
+                <p>Carto Doodle allows users to draw, edit, and delete their own custom map geometries - try it out and add a few! After submitting, click the link to go to the <a href="http://field-set.com/carto_doodle/admin.html" target="_blank">admin tool</a> to see your work.</p>
+                <p>Carto Doodle is built on a <a href="https://cartodb.com/">CartoDB</a> back-end.</p>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
         </div>
-        <button class="close-button" data-close aria-label="Close modal" type="button">
-            <span aria-hidden="true">&times;</span>
-        </button>
+        <div class="row">
+            <button class="extra-close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times; Close</span>
+            </button>
+        </div>
     </div>
     
     <div id="footer"></div>

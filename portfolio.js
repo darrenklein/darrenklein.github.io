@@ -12,6 +12,10 @@ $("#projects_button").click(function() {
     scroll("#projects");
 });
 
+$("#press_button").click(function() {
+    scroll("#press");
+});
+
 $("#contact_button").click(function() {
     scroll("#contact");
 });

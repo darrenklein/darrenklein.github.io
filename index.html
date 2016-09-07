@@ -66,6 +66,14 @@
                     </div>
                 </div>
 
+                <div class="medium-4 columns project_container" data-open="secret_thicket_modal">
+                    <div class="medium-24 columns project">
+                        <h4 class="project_title">Secret Thicket</h4>
+                        <img src="images/secret_thicket.jpg" class="project_image" />
+                        <p class="project_tag">Concept, website development</p>
+                    </div>
+                </div>
+
                 <div class="medium-4 columns project_container" data-open="psfist_modal">
                     <div class="medium-24 columns project">
                         <h4 class="project_title">PSFST</h4>
@@ -73,6 +81,10 @@
                         <p class="project_tag">Concept, website development, design</p>
                     </div>
                 </div>
+                
+            </div>
+            
+            <div class="project_row row">
 
                 <div class="medium-4 columns project_container" data-open="geostudy_modal">
                     <div class="medium-24 columns project">
@@ -81,10 +93,6 @@
                         <p class="project_tag">Concept, website development</p>
                     </div>
                 </div>
-                
-            </div>
-            
-            <div class="project_row row">
             
                 <div class="medium-4 columns project_container" data-open="livas_modal">
                     <div class="medium-24 columns project">
@@ -141,7 +149,31 @@
             <div class="medium-4 columns project_description">
                 <p>Every year, millions of birds are killed by colliding with buildings - this is a major conservation issue that NYC Audubon is working to address. <a href="http://www.d-bird.org" target="_blank">D-Bird</a> is a fully-responsive mobile and desktop web app created for NYC Audubon to complement their research and advocacy efforts by collecting crowdsourced georeferenced bird mortality data from citizen scientists.</p>
                 <p>D-Bird has recently launched in Texas, Minnesota, and Atlanta.</p>
-                <p>In addition to the data collection tool, each client has access to an administrator portal that includes data visualization, summary, and export functions.</p>
+                <p>D-Bird includes an adminisatrator portal with data visualization, summary, and export functions.</p>
+                <p>App design by Patrick Harry - <a href="http://patrickharry.com/">patrickharry.com</a></p>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="close-row row">
+            <button class="extra-close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times; Close</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="secret_thicket_modal" class="reveal large" data-reveal>
+        <div class="row">
+            <h2 id="modalTitle">Secret Thicket</h2>
+            <p class="lead">Offline mobile field navigation and data collection</p>
+            <p class="client">Client: <a href="http://www.delawareriverkeeper.org/" target="_blank">Delaware Riverkeeper</a></p>
+            <p class="demo">Demo not available</p>
+            <iframe src="secret_thicket/secret_thicket.html" class="medium-8 columns"></iframe>
+            <div class="medium-4 columns project_description">
+                <p>Delaware Riverkeeper field data collection volunteers often operate in remote areas, far away from reliable cell network coverage. Secret Thicket is a mobile offline combination field navigator and dynamic data collection tool that allows volunteers to find their location on a custom map and record georeferenced data points.</p>
+                <p>Built in Ruby on Rails, Secret Thicket includes a user login system, a temporary data saving feature, S3 Bucket image storage, and an administrator portal with data export functionality.</p>
+                <p>App design by Priyal Parikh - <a href="http://priyalparikh.com/" target="_blank">priyalparikh.com</a></p>
             </div>
             <button class="close-button" data-close aria-label="Close modal" type="button">
                 <span aria-hidden="true">&times;</span>
@@ -183,7 +215,7 @@
             <p class="demo">Demo not available</p>
             <iframe src="geostudy/geostudy.html" class="medium-8 columns"></iframe>
             <div class="medium-4 columns project_description">
-                <p>GeoStudy is a prototype field research data collection suite, modelled on a fictional food distribution and purchasing study.</p>
+                <p>GeoStudy is a prototype field research data collection suite, modelled on a conceptual food distribution and purchasing study.</p>
                 <p>Built in Ruby on Rails, GeoStudy allows researchers to create georeferenced study sites and collect various types of related field data.</p>
                 <p>A dedicated administrator portal allows project leaders to dynamically define study parameters, review survey progress, and export summary field data reports.</p>
             </div>

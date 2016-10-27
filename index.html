@@ -76,10 +76,10 @@
                     </div>
                 </div>
 
-                <div class="medium-4 columns project_container" data-open="psfist_modal">
+                <div class="medium-4 columns project_container" id="birding_by_subway_container" data-open="birding_by_subway_modal">
                     <div class="medium-24 columns project">
-                        <h4 class="project_title">PSFST</h4>
-                        <img src="images/psfist.jpg" class="project_image" />
+                        <h4 class="project_title">Birding by Subway</h4>
+                        <img src="images/birding_by_subway.jpg" class="project_image" />
                         <p class="project_tag">Concept, website development, design</p>
                     </div>
                 </div>
@@ -88,11 +88,11 @@
             
             <div class="project_row row">
 
-                <div class="medium-4 columns project_container" data-open="geostudy_modal">
+                <div class="medium-4 columns project_container" data-open="psfist_modal">
                     <div class="medium-24 columns project">
-                        <h4 class="project_title">GeoStudy</h4>
-                        <img src="images/geostudy.jpg" class="project_image" />
-                        <p class="project_tag">Concept, website development</p>
+                        <h4 class="project_title">PSFST</h4>
+                        <img src="images/psfist.jpg" class="project_image" />
+                        <p class="project_tag">Concept, website development, design</p>
                     </div>
                 </div>
             
@@ -116,6 +116,18 @@
                 <div class="medium-4 columns project_container" id="placeholder">
                 </div>
                 
+            </div>
+
+            <div class="project_row row">
+
+                <div class="medium-4 columns project_container" data-open="geostudy_modal">
+                    <div class="medium-24 columns project">
+                        <h4 class="project_title">GeoStudy</h4>
+                        <img src="images/geostudy.jpg" class="project_image" />
+                        <p class="project_tag">Concept, website development</p>
+                    </div>
+                </div>
+
             </div>
             
         </div>
@@ -209,6 +221,28 @@
             </button>
         </div>
     </div>
+
+    <div id="birding_by_subway_modal" class="reveal large" data-reveal>
+        <div class="row">
+            <h2 id="modalTitle">Birding by Subway</h2>
+            <p class="lead">Custom Google Map</p>
+            <p class="client">Client: <a href="http://www.nycaudubon.org" target="_blank">New York City Audubon Society</a></p>
+            <p class="demo">Active demo</p>
+            <iframe class="medium-8 columns" id="birding_by_subway_iframe"></iframe>
+            <div class="medium-4 columns project_description">
+                <p>New York City has some of the best birding locations in the United States, and also one of the best public transit systems! This map provides an overview of some of the City's top birding spots and allows users to quickly get public transit (or other) directions.</p>
+                <p>Birding by Subway is built in a LAMP stack with the Google Map API.</p>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="close-row row">
+            <button class="extra-close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times; Close</span>
+            </button>
+        </div>
+    </div>
     
     <div id="geostudy_modal" class="reveal large" data-reveal>
         <div class="row">
@@ -281,6 +315,11 @@
     
     <script type="text/javascript"> 
         $(document).foundation();
+
+        //IFRAME FOR THIS PROJECT WON'T LOAD CORRECTLY UNLESS HANDLED LIKE SO... MAP DOESN'T CENTER
+        $("#birding_by_subway_container").click(function(){
+            $('iframe#birding_by_subway_iframe').attr('src', 'https://www.d-bird.org/birding_by_subway/');
+        });
     </script>
     
     <script src="scripts/portfolio.js"></script>

@@ -175,3 +175,7 @@ iframe{
 .extra-close-button:hover{
     background-color: #0574C2;
 }
+
+.publication{
+    font-style: italic;
+}

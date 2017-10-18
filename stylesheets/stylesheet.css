@@ -138,19 +138,33 @@ iframe{
     margin-bottom: 60px;
 }
 
-#github{
+#repo_links {
+    margin-left: 5px;
+    margin-bottom: 5px;   
+}
+
+.repo_image {
+    width: 114px;  
+}
+
+.repo_link {
+    vertical-align: middle;
+    margin-left: 5px;   
+}
+
+/*#github{
     margin-left: 5px;
     margin-bottom: 5px;
-}
+}*/
 
-#github_logo{
+/*#github_logo{
     width: 114px;
-}
+}*/
 
-#github_link{
+/*#github_link{
     vertical-align: bottom;
     margin-left: 5px;
-}
+}*/
 
 #footer{
     width: 100%;

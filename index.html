@@ -21,19 +21,24 @@
             <div id="site_name" class="show-for-medium medium-6 columns">darren klein</div>
             <div id="site_name_small" class="show-for-small-only small-12 columns">darren klein</div>
             <div id="navigation" class="show-for-medium medium-5 columns">
-                <a class="button" id="about_button">About &raquo;</a>
-                <a class="button" id="projects_button">Projects &raquo;</a>
-                <a class="button" id="press_button">Press &raquo;</a>
-                <a class="button" id="contact_button">Contact &raquo;</a>
+                <a class="button about_button">About &raquo;</a>
+                <a class="button projects_button">Projects &raquo;</a>
+                <a class="button press_button">Press &raquo;</a>
+                <a class="button contact_button">Contact &raquo;</a>
             </div>
         </div>
-        <div id="tagline">web developer</div>
+        <div id="tagline">developer</div>
     </div>
     <div id="contents" class="row">
         <div id="about" class="content_container row">
             <h2 class="section_heading">About Me&nbsp;&nbsp;</h2></p>
             <div class="body_text">
-                <p>I am a freelance web developer based in Brooklyn, NY, with a particular passion for projects that benefit environmental and social causes. I have worked to develop research and data collection tools for NYC Audubon, Seatuck, Cornell Cooperative Extension, The New School, and Delaware Riverkeeper.</p>
+                <p>
+                    I am a developer based in Brooklyn, NY, with a particular passion for projects that deal with environmental conservation and social justice. I have worked to develop research and data collection tools for a number of local non-profit organizations, and currently work for a communications startup company.
+                </p>
+                <p>
+                    I am available for freelance work - please see the <a class="contact_button">Contact</a> section below.
+                </p>
             </div>
         </div>
         <div id="projects" class="content_container row">
@@ -69,13 +74,6 @@
                         <p class="project_tag">Concept, website development, design</p>
                     </div>
                 </div>
-                <div class="medium-4 columns project_container" data-open="livas_modal">
-                    <div class="medium-24 columns project">
-                        <h4 class="project_title">LIVAS</h4>
-                        <img src="images/livas.jpg" class="project_image" />
-                        <p class="project_tag">Concept, website development, design</p>
-                    </div>
-                </div>
                 <div class="medium-4 columns project_container" data-open="geojson_doodler_modal">
                     <div class="medium-24 columns project">
                         <h4 class="project_title">GeoJSON Doodler</h4>
@@ -87,15 +85,12 @@
                 <div class="medium-4 columns project_container" id="placeholder">
                 </div>
             </div>
-            <div class="project_row row">
-                <div class="medium-4 columns project_container" data-open="geostudy_modal">
-                    <div class="medium-24 columns project">
-                        <h4 class="project_title">GeoStudy</h4>
-                        <img src="images/geostudy.jpg" class="project_image" />
-                        <p class="project_tag">Concept, website development</p>
-                    </div>
-                </div>
-            </div>
+            <h3 class="section_heading">Open-source Project Work</h3>
+            <ul>
+                <li>
+                    <a href="https://github.com/circles-learning-labs/ecto_adapters_dynamodb" target="_blank">Ecto Adapter for DynamoDB</a>
+                </li>
+            </ul>
         </div>
         <div id="press" class="content_container row">
             <h2 class="section_heading">Press&nbsp;&nbsp;</h2></p>
@@ -118,8 +113,13 @@
             <div class="body_text">I am available for contract web development - please reach out to me at <a href="mailto:darren.a.klein@gmail.com">darren.a.klein@gmail.com</a></div>
         </div>
     </div>
-    <div id="github">
-        <img src="images/github_logo.png" id="github_logo" /><a href="https://github.com/darrenklein" id="github_link">darrenklein</a>
+    <div id="repo_links">
+        <a href="https://github.com/darrenklein" class="repo_link" id="github_link">
+            <img src="images/github_logo.png" class="repo_image" id="github_logo" />
+        </a>
+        <a href="https://gitlab.com/darrenklein" class="repo_link" id="gitlab_link">
+            <img src="images/gitlab_logo.png" class="repo_image" id="gitlab_logo" />
+        </a>
     </div>
     <!--REVEAL MODALS-->
     <div id="d-bird_modal" class="reveal large" data-reveal>
@@ -198,49 +198,6 @@
             <div class="medium-4 columns project_description">
                 <p>New York City has some of the best birding locations in the United States, and also one of the best public transit systems! This map provides an overview of some of the City's top birding spots and allows users to quickly get public transit (or other) directions.</p>
                 <p>Birding by Subway is built in a LAMP stack with the Google Map API.</p>
-            </div>
-            <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="close-row row">
-            <button class="extra-close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times; Close</span>
-            </button>
-        </div>
-    </div>
-    <div id="geostudy_modal" class="reveal large" data-reveal>
-        <div class="row">
-            <h2 id="modalTitle">GeoStudy</h2>
-            <p class="lead">Field data collection suite</p>
-            <p class="demo">Demo not available</p>
-            <iframe src="geostudy/geostudy.html" class="medium-8 columns"></iframe>
-            <div class="medium-4 columns project_description">
-                <p>GeoStudy is a prototype field research data collection suite, modelled on a conceptual food distribution and purchasing study.</p>
-                <p>Built in Ruby on Rails, GeoStudy allows researchers to create georeferenced study sites and collect various types of related field data.</p>
-                <p>A dedicated administrator portal allows project leaders to dynamically define study parameters, review survey progress, and export summary field data reports.</p>
-            </div>
-            <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="close-row row">
-            <button class="extra-close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times; Close</span>
-            </button>
-        </div>
-    </div>
-    <div id="livas_modal" class="reveal large" data-reveal>
-        <div class="row">
-            <h2 id="modalTitle">Long Island Volunteer Alewife Survey (LIVAS)</h2>
-            <p class="lead">Field data collection</p>
-            <p class="client">Client: <a href="https://www.seatuck.org/" target="_blank">Seatuck Environmental Association</a></p>
-            <p class="demo">Active demo</p>
-            <iframe src="livas/welcome.html" class="medium-8 columns"></iframe>
-            <div class="medium-4 columns project_description">
-                <p>Created for Seatuck, LIVAS is a fully-responsive mobile and desktop web-app designed to collect volunteer-sourced georeferenced river herring population survey data.</p>
-                <p>In addition to the data collection tool, the client has access to an administrator portal that includes data summary and export functions.</p>
-                <p>LIVAS is built in a LAMP stack with a Zurb Foundation responsive front-end.</p>
             </div>
             <button class="close-button" data-close aria-label="Close modal" type="button">
                 <span aria-hidden="true">&times;</span>

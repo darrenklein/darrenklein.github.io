@@ -48,21 +48,21 @@
                     <div class="medium-24 columns project">
                         <h4 class="project_title">D-Bird</h4>
                         <img src="images/d-bird.jpg" class="project_image" />
-                        <p class="project_tag">Concept, website development</p>
+                        <p class="project_tag">Concept, development</p>
                     </div>
                 </div>
-                <div class="medium-4 columns project_container" data-open="secret_thicket_modal">
+                <div class="medium-4 columns project_container" data-open="stripe_agile_handler_modal">
                     <div class="medium-24 columns project">
-                        <h4 class="project_title">Secret Thicket</h4>
-                        <img src="images/secret_thicket.jpg" class="project_image" />
-                        <p class="project_tag">Concept, website development</p>
+                        <h4 class="project_title">Stripe/AgileCRM Handler</h4>
+                        <img src="images/stripe_agile_handler.jpg" class="project_image" />
+                        <p class="project_tag">Concept, development, design</p>
                     </div>
                 </div>
                 <div class="medium-4 columns project_container" id="birding_by_subway_container" data-open="birding_by_subway_modal">
                     <div class="medium-24 columns project">
                         <h4 class="project_title">Birding by Subway</h4>
                         <img src="images/birding_by_subway.jpg" class="project_image" />
-                        <p class="project_tag">Concept, website development, design</p>
+                        <p class="project_tag">Concept, development, design</p>
                     </div>
                 </div>
             </div>
@@ -71,14 +71,14 @@
                     <div class="medium-24 columns project">
                         <h4 class="project_title">PSFST</h4>
                         <img src="images/psfist.jpg" class="project_image" />
-                        <p class="project_tag">Concept, website development, design</p>
+                        <p class="project_tag">Concept, development, design</p>
                     </div>
                 </div>
                 <div class="medium-4 columns project_container" data-open="geojson_doodler_modal">
                     <div class="medium-24 columns project">
                         <h4 class="project_title">GeoJSON Doodler</h4>
                         <img src="images/geojson_doodler.jpg" class="project_image" />
-                        <p class="project_tag">Concept, website development, design</p>
+                        <p class="project_tag">Concept, development, design</p>
                     </div>
                 </div>
                 <!--DELETE THIS PLACEHOLDER WHEN YOU GET THREE PROJECTS IN THE ROW-->
@@ -110,7 +110,7 @@
         </div>
         <div id="contact" class="content_container row">
             <h2 class="section_heading">Contact&nbsp;&nbsp;</h2></p>
-            <div class="body_text">I am available for contract web development - please reach out to me at <a href="mailto:darren.a.klein@gmail.com">darren.a.klein@gmail.com</a></div>
+            <div class="body_text">Please feel free to reach out to me at <a href="mailto:darren.a.klein@gmail.com">darren.a.klein@gmail.com</a></div>
         </div>
     </div>
     <div id="repo_links">
@@ -145,17 +145,23 @@
             </button>
         </div>
     </div>
-    <div id="secret_thicket_modal" class="reveal large" data-reveal>
+    <div id="stripe_agile_handler_modal" class="reveal large" data-reveal>
         <div class="row">
-            <h2 id="modalTitle">Secret Thicket</h2>
-            <p class="lead">Offline mobile field navigation and data collection</p>
-            <p class="client">Client: <a href="http://www.delawareriverkeeper.org/" target="_blank">Delaware Riverkeeper</a></p>
-            <p class="demo">Demo not available</p>
-            <iframe src="secret_thicket/secret_thicket.html" class="medium-8 columns"></iframe>
+            <h2 id="modalTitle">Stripe/AgileCRM Handler</h2>
+            <p class="lead">Customer management</p>
+            <p class="client">Client: <a href="http://circl.es" target="_blank">Circles</a></p>
+            <p class="demo">Video demo</p>
+            <iframe src="https://www.youtube.com/embed/qjTV82IkqDQ?rel=0&amp;showinfo=0" class="medium-8 columns" allowfullscreen></iframe>
             <div class="medium-4 columns project_description">
-                <p>Delaware Riverkeeper field data collection volunteers often operate in remote areas, far away from reliable cell network coverage. Secret Thicket is a mobile offline combination field navigator and dynamic data collection tool that allows volunteers to find their location on a custom map and record georeferenced data points.</p>
-                <p>Built in Ruby on Rails, Secret Thicket includes a user login system, a temporary data saving feature, S3 Bucket image storage, and an administrator portal with data export functionality.</p>
-                <p>App design by Priyal Parikh - <a href="http://priyalparikh.com/" target="_blank">priyalparikh.com</a></p>
+                <p>
+                    Circles manages their customer base using AgileCRM, but payments are handled by Stripe.
+                </p>
+                <p>
+                    This app serves as an interface between the two services, working with their REST APIs to first create a customer object in Stripe and then add that customer info to the user's AgileCRM profile.
+                </p>
+                <p>
+                    The app was built on an Express server in the NodeJS framework.
+                </p>
             </div>
             <button class="close-button" data-close aria-label="Close modal" type="button">
                 <span aria-hidden="true">&times;</span>

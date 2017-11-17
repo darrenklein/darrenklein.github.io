@@ -138,18 +138,18 @@ iframe{
     margin-bottom: 60px;
 }
 
-#repo_links {
+#professional_links {
     margin-left: 5px;
     margin-bottom: 5px;   
 }
 
-.repo_image {
+.professional_link_image {
     width: 114px;  
 }
 
-.repo_link {
+.professional_link {
     vertical-align: middle;
-    margin-left: 5px;   
+    margin-left: 20px;   
 }
 
 #footer{

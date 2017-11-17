@@ -67,15 +67,23 @@
                 </div>
             </div>
 
-        <!-- TEMPORARILY DISABLING UNTIL I CAN GET NEW HOSTING FOR THE DOODLER - NOTE THE PLACEHOLDER DIV
+  
             <div class="project_row row">
-                <div class="medium-4 columns project_container" data-open="psfist_modal">
+                <div class="medium-4 columns project_container" data-open="fullstory_modal">
+                    <div class="medium-24 columns project">
+                        <h4 class="project_title">FullStory</h4>
+                        <img src="images/fullstory.png" class="project_image" />
+                        <p class="project_tag">Development assistant</p>
+                    </div>
+                </div>
+                <div class="medium-4 columns project_container" data-open="psfst_modal">
                     <div class="medium-24 columns project">
                         <h4 class="project_title">PSFST</h4>
-                        <img src="images/psfist.jpg" class="project_image" />
+                        <img src="images/psfst.jpg" class="project_image" />
                         <p class="project_tag">Concept, development, design</p>
                     </div>
                 </div>
+                <!-- TEMPORARILY DISABLING UNTIL I CAN GET NEW HOSTING FOR THE DOODLER
                 <div class="medium-4 columns project_container" data-open="geojson_doodler_modal">
                     <div class="medium-24 columns project">
                         <h4 class="project_title">GeoJSON Doodler</h4>
@@ -83,10 +91,11 @@
                         <p class="project_tag">Concept, development, design</p>
                     </div>
                 </div>
-                <div class="medium-4 columns project_container" id="placeholder">
+                -->
+                <div class="medium-4 columns project_container placeholder">
                 </div>
             </div>
-        -->
+    
 
 
             <h4 class="section_heading">Open-source Project Work&nbsp;&nbsp;</h4>
@@ -117,12 +126,15 @@
             <div class="body_text">Please feel free to reach out to me at <a href="mailto:darren.a.klein@gmail.com">darren.a.klein@gmail.com</a></div>
         </div>
     </div>
-    <div id="repo_links">
-        <a href="https://github.com/darrenklein" class="repo_link" id="github_link">
-            <img src="images/github_logo.png" class="repo_image" id="github_logo" />
+    <div id="professional_links">
+        <a href="https://github.com/darrenklein" class="professional_link" id="github_link" target="_blank">
+            <img src="images/github_logo.png" class="professional_link_image" id="github_logo" />
         </a>
-        <a href="https://gitlab.com/darrenklein" class="repo_link" id="gitlab_link">
-            <img src="images/gitlab_logo.png" class="repo_image" id="gitlab_logo" />
+        <a href="https://gitlab.com/darrenklein" class="professional_link" id="gitlab_link" target="_blank">
+            <img src="images/gitlab_logo.png" class="professional_link_image" id="gitlab_logo" />
+        </a>
+        <a href="https://www.linkedin.com/in/darren-klein-022b80101" class="professional_link" id="linkedin_link" target="_blank">
+            <img src="images/linkedin_logo.png" class="professional_link_image" id="linkedin_logo" />
         </a>
     </div>
     <!--REVEAL MODALS-->
@@ -177,7 +189,28 @@
             </button>
         </div>
     </div>
-    <div id="psfist_modal" class="reveal large" data-reveal>
+    <div id="fullstory_modal" class="reveal large" data-reveal>
+        <div class="row">
+            <h2 class="modalTitle">FullStory</h2>
+            <p class="lead">Balanced news aggregator</p>
+            <p class="client">Client: Independent</p>
+            <p class="demo">Active demo</p>
+            <iframe src="https://thefullstory.herokuapp.com/" class="medium-8 columns"></iframe>
+            <div class="medium-4 columns project_description">
+                <p>In an era of increasingly personalized media, FullStory provides users with a balanced perspective on the day's news, presenting users with top stories from well-known left-leaning, centrist, and right-leaning sources.</p>
+                <p>FullStory was conceived and designed by Thorsten Schröder, the project lead, and is built in NodeJS and Express.</p>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="close-row row">
+            <button class="extra-close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">Close</span>
+            </button>
+        </div>
+    </div>
+    <div id="psfst_modal" class="reveal large" data-reveal>
         <div class="row">
             <h2 class="modalTitle">Project Safe Flight Survey Tool (PSFST)</h2>
             <p class="lead">Dynamic field data collection form</p>

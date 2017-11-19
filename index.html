@@ -143,13 +143,12 @@
             <h2 class="modalTitle">D-Bird</h2>
             <p class="lead">Citizen science</p>
             <p class="client">Client: <a href="http://www.nycaudubon.org" target="_blank">New York City Audubon Society</a></p>
-            <p class="demo">Active demo</p>
-            <iframe src="d-bird/D-Bird.html" class="medium-8 columns"></iframe>
+            <p class="demo">Video demo</p>
+            <iframe src="https://www.youtube.com/embed/YF4V3Plj_qk?rel=0&amp;showinfo=0" class="medium-8 columns" allowfullscreen></iframe>
             <div class="medium-4 columns project_description">
                 <p>Every year, millions of birds are killed by colliding with buildings - this is a major conservation issue that NYC Audubon is working to address. <a href="http://www.d-bird.org" target="_blank">D-Bird</a> is a fully-responsive mobile and desktop web app created for NYC Audubon to complement their research and advocacy efforts by crowdsourcing georeferenced bird mortality data from citizen scientists.</p>
-                <p>D-Bird has recently launched in Texas, Minnesota, and Atlanta.</p>
                 <p>D-Bird is built in a LAMP stack and includes an adminisatrator portal with data visualization, summary, and export functions.</p>
-                <p>App design by Patrick Harry - <a href="http://patrickharry.com/" target="_blank">patrickharry.com</a></p>
+                <p>Design by Patrick Harry - <a href="http://patrickharry.com/" target="_blank">patrickharry.com</a></p>
             </div>
             <button class="close-button" data-close aria-label="Close modal" type="button">
                 <span aria-hidden="true">&times;</span>
@@ -169,15 +168,9 @@
             <p class="demo">Video demo</p>
             <iframe src="https://www.youtube.com/embed/7acYejqxtEo?rel=0&amp;showinfo=0" class="medium-8 columns" allowfullscreen></iframe>
             <div class="medium-4 columns project_description">
-                <p>
-                    Circles manages their customer base using AgileCRM, but payments are handled by Stripe.
-                </p>
-                <p>
-                    This app serves as an interface between the two services, working with their APIs to first create a customer object in Stripe and then add that customer info to their AgileCRM profile.
-                </p>
-                <p>
-                    The Stripe/AgileCRM Handler is built on an Express server in the NodeJS framework.
-                </p>
+                <p>Circles manages their customer base using AgileCRM, but payments are handled by Stripe.</p>
+                <p>This app serves as an interface between the two services, working with their APIs to first create a customer object in Stripe and then add that customer info to their AgileCRM profile.</p>
+                <p>The Stripe/AgileCRM Handler is built on an Express server in the NodeJS framework.</p>
             </div>
             <button class="close-button" data-close aria-label="Close modal" type="button">
                 <span aria-hidden="true">&times;</span>
@@ -197,8 +190,8 @@
             <p class="demo">Active demo</p>
             <iframe src="https://thefullstory.herokuapp.com/" class="medium-8 columns"></iframe>
             <div class="medium-4 columns project_description">
-                <p>In an era of increasingly personalized media, FullStory provides users with a balanced perspective on the day's news, presenting users with top stories from well-known left-leaning, centrist, and right-leaning sources.</p>
-                <p>FullStory was conceived and designed by Thorsten Schröder, the project lead, and is built in NodeJS and Express.</p>
+                <p>In an era of increasingly personalized media, <a href="https://thefullstory.herokuapp.com/" target="_blank">FullStory</a> provides users with a balanced perspective on the day's news, presenting users with top stories from well-known left-leaning, centrist, and right-leaning sources.</p>
+                <p>FullStory was conceived and designed by Thorsten Schröder, the project lead, and is built on an Express server in the NodeJS framework.</p>
             </div>
             <button class="close-button" data-close aria-label="Close modal" type="button">
                 <span aria-hidden="true">&times;</span>
@@ -236,10 +229,10 @@
             <h2 class="modalTitle">Birding by Subway</h2>
             <p class="lead">Custom Google Map</p>
             <p class="client">Client: <a href="http://www.nycaudubon.org" target="_blank">New York City Audubon Society</a></p>
-            <p class="demo">Active demo</p>
-            <iframe class="medium-8 columns" id="birding_by_subway_iframe"></iframe>
+            <p class="demo">Video demo</p>
+            <iframe src="https://www.youtube.com/embed/d6X66wBq29s?rel=0&amp;showinfo=0" class="medium-8 columns" allowfullscreen></iframe>
             <div class="medium-4 columns project_description">
-                <p>New York City has some of the best birding locations in the United States, and one of the best public transit systems! This interactive map provides an overview of the City's top birding spots and allows users to quickly get public transit (or other) directions.</p>
+                <p>New York City has some of the best birding locations in the United States, and one of the best public transit systems! <a href="http://www.nycaudubon.org/birding-by-subway" target="_blank">Birding by Subway</a> provides an overview of the City's top birding spots and allows users to quickly get public transit (or other) directions.</p>
                 <p>Birding by Subway is built in a LAMP stack with the Google Map API.</p>
             </div>
             <button class="close-button" data-close aria-label="Close modal" type="button">
@@ -252,7 +245,7 @@
             </button>
         </div>
     </div>
-    <div id="geojson_doodler_modal" class="reveal large" data-reveal>
+<!--     <div id="geojson_doodler_modal" class="reveal large" data-reveal>
         <div class="row">
             <h2 class="modalTitle">GeoJSON Doodler</h2>
             <p class="lead">Map geometry drawing and export tool</p>
@@ -271,14 +264,10 @@
                 <span aria-hidden="true">Close</span>
             </button>
         </div>
-    </div>
+    </div> -->
     <div id="footer"></div>
     <script type="text/javascript"> 
         $(document).foundation()
-        //IFRAME FOR THIS PROJECT WON'T LOAD CORRECTLY UNLESS HANDLED LIKE SO... MAP DOESN'T CENTER
-        $("#birding_by_subway_container").click(function(){
-            $('iframe#birding_by_subway_iframe').attr('src', 'https://www.d-bird.org/birding_by_subway/')
-        });
     </script>
     <script src="scripts/portfolio.js"></script>
 </body>
